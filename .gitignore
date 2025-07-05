@@ -1,0 +1,43 @@
+# Variáveis de Ambiente
+.env
+.env.*
+*.env
+
+# Ambientes Virtuais
+.venv/
+env/
+venv/
+*/bin/activate
+*.sqlite
+*.sqlite3
+
+# Cache e Compilação Python
+__pycache__/
+*.pyc
+*.o
+*.so
+*.egg
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Arquivos de IDEs
+.vscode/        # VS Code
+.idea/          # PyCharm
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+
+# Bancos de Dados Locais (se usar SQLite para desenvolvimento)
+*.db
+
+# Outros arquivos gerados
+*.bak
+*.swp
+*.swo
