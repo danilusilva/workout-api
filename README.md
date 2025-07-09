@@ -101,17 +101,17 @@ uvicorn workout_api.main:app --reload
 ```
 workout-api/
 │
-├── app/
-│   ├── models/          # Modelos SQLAlchemy
-│   ├── schemas/         # Schemas Pydantic
-│   ├── routers/         # Rotas organizadas por recurso
-│   ├── services/        # Regras de negócio
-│   ├── db.py            # Conexão com banco de dados
-│   └── main.py          # Inicialização da aplicação FastAPI
-│
-├── tests/               # Testes automatizados (em breve)
-├── requirements.txt     # Dependências
-└── README.md            # Documentação
+├── .venv/                   # Ambiente virtual (Ao ser criado essa pasta surge)
+├── alembic/                 # Ferramenta de migração de banco de dados
+│   └── (arquivos do Alembic)
+├── workout_api/             # Código-fonte da API
+│   └── (módulos Python)
+├── .gitignore               # Arquivos e diretórios a serem ignorados pelo Git
+├── alembic.ini              # Arquivo de configuração do Alembic
+├── docker-compose.yml       # Configuração para Docker Compose
+├── Makefile                 # Arquivo para automação de tarefas
+├── README.md                # Documentação do projeto
+└── requirements.txt         # Dependências do Python
 ```
 
 # ✨ Contribuição
