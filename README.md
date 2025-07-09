@@ -66,11 +66,14 @@ Uma API robusta para gerenciar **atletas**, **categorias de treino** e **centros
 ---
 
 ## 🔧 Instalação com pip
-### Clone o repositório
-- git clone https://github.com/danilusilva/workout-api.git
-cd workout-api
 
 ```bash
+
+# Clone o repositório
+- git clone https://github.com/danilusilva/workout-api.git
+
+# Mova-se para o diretório da API
+cd workout-api
 
 # Crie um ambiente virtual
 python -m venv venv
