@@ -59,27 +59,38 @@ Uma API robusta para gerenciar **atletas**, **categorias de treino** e **centros
 - Python 3.11+
 - Git
 - Gerenciador de pacotes pip ou poetry
+- Docker
+- SGBD para gerenciar informações(Utilizei DBeaver, conectado com PostgreeSQL)
+- Alembic para migrar dados
 
 ---
 
 ## 🔧 Instalação com pip
 ### Clone o repositório
-- git clone https://github.com/seu-usuario/workout-api.git
+- git clone https://github.com/danilusilva/workout-api.git
 cd workout-api
 
 ### Crie um ambiente virtual
 ```bash
 python -m venv venv
+
+# Ative o ambiente virtual
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate     # Windows
 
 # Instale as dependências
 pip install -r requirements.txt
 
+# Inicie a imagem no Docker/inicie o contêiner Docker
+docker compose up -d
+
+# Migre os dados já existentes com alembic
+alembic upgrade head
+
 ```
 # ▶️ Execução
 ```bash
-uvicorn app.main:app --reload
+uvicorn workout_api.main:app --reload
 ```
 - Acesse a documentação interativa em: http://localhost:8000/docs
 
