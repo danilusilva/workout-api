@@ -70,8 +70,9 @@ Uma API robusta para gerenciar **atletas**, **categorias de treino** e **centros
 - git clone https://github.com/danilusilva/workout-api.git
 cd workout-api
 
-### Crie um ambiente virtual
 ```bash
+
+# Crie um ambiente virtual
 python -m venv venv
 
 # Ative o ambiente virtual
